@@ -15,6 +15,10 @@ button {
   cursor: pointer;
 }
 
+.modifiers button {
+  background-color: #ccc;
+}
+
 /* All things Grid, Flexbox, Box Alignment */
 .wrapper,
 .subgrid {
@@ -23,6 +27,7 @@ button {
 .wrapper {
   grid-template-areas:
     "total total total total"
+    "modif modif modif oper"
     "digit digit digit oper"
     "digit digit digit oper"
     "digit digit digit oper"
@@ -31,6 +36,9 @@ button {
 }
 .show-input {
   grid-area: total;
+}
+.modifiers {
+  grid-area: modif;
 }
 .operations {
   grid-area: oper;

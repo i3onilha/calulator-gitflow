@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="wrapper">
       <div className="show-input">{input}</div>
-      <div className="subgrid">
+      <div className="modifiers subgrid">
         <button
           onClick={() => setInput("")}
           value=""
