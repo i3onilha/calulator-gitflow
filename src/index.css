@@ -54,6 +54,11 @@ button {
   font-size: 2rem;
 }
 
+.modifiers {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
 .digits {
   display: flex;
   flex-wrap: wrap;

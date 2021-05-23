@@ -18,10 +18,16 @@ function App() {
       <div className="show-input">{input}</div>
       <div className="modifiers subgrid">
         <button
-          onClick={() => setInput("")}
+          onClick={() => setInput("0")}
           value=""
         >
           AC
+        </button>
+        <button
+          onClick={() => setInput("")}
+          value=""
+        >
+          C
         </button>
       </div>
       <div className="digits flex">
