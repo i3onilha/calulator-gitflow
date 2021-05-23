@@ -13,15 +13,26 @@ function App() {
     setInput(input + event.target.value);
   };
 
+  const removeLastDigit = () => {
+    const sliced = input.slice(0, input.length - 1)
+    setInput(sliced);
+  };
+
   return (
     <div className="wrapper">
       <div className="show-input">{input}</div>
       <div className="modifiers subgrid">
         <button
-          onClick={() => setInput("")}
+          onClick={() => setInput("0")}
           value=""
         >
           AC
+        </button>
+        <button
+          onClick={() => removeLastDigit()}
+          value=""
+        >
+          &lt;=
         </button>
       </div>
       <div className="digits flex">
