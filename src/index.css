@@ -17,8 +17,9 @@ button {
 }
 
 .operations button {
-  background-color: orange;
+  background-color: green;
   width: 100px;
+  color: white;
 }
 .digits button {
   background-color: #ccc;

@@ -22,7 +22,7 @@ function App() {
           : String(eval(input))
       );
     } catch (e) {
-      console.log(e);
+      alert('ERROR: Operation forbidden!');
     }
   };
 
