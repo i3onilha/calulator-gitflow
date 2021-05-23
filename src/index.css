@@ -31,6 +31,7 @@ button {
 }
 .show-input {
   grid-area: total;
+  min-height: 10vh;
 }
 .operations {
   grid-area: oper;
