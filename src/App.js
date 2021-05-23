@@ -16,6 +16,14 @@ function App() {
   return (
     <div className="wrapper">
       <div className="show-input">{input}</div>
+      <div className="subgrid">
+        <button
+          onClick={() => setInput("")}
+          value=""
+        >
+          AC
+        </button>
+      </div>
       <div className="digits flex">
         {digits.map(digit => (
           <button
