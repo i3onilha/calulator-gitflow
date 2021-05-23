@@ -13,6 +13,19 @@ function App() {
     setInput(input + event.target.value);
   };
 
+  const calculate = () => {
+    try {
+      setInput(
+        String(eval(input)).length > 3 &&
+          String(eval(input)).includes(".")
+          ? String(eval(input).toFixed(4))
+          : String(eval(input))
+      );
+    } catch (e) {
+      alert('ERROR: Operation forbidden!');
+    }
+  };
+
   return (
     <div className="wrapper">
       <div className="show-input">{input}</div>
@@ -38,23 +51,12 @@ function App() {
           </button>
         ))}
         <button
-          onClick={(e) => {
-            try {
-              setInput(
-                String(eval(input)).length > 3 &&
-                  String(eval(input)).includes(".")
-                  ? String(eval(input).toFixed(4))
-                  : String(eval(input))
-              );
-            } catch (e) {
-              console.log(e);
-            }
-          }}
+          onClick={calculate}
           value="="
         >
           =
         </button>
-        </div>
+      </div>
     </div>
   );
 }

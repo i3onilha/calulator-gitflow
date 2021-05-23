@@ -6,6 +6,7 @@ body {
 }
 .wrapper {
   max-width: 420px;
+  min-height: 76vh;
   margin: 0 auto;
 }
 
@@ -13,6 +14,15 @@ button {
   font-size: 2rem;
   border: 1px solid #333;
   cursor: pointer;
+}
+
+.operations button {
+  background-color: green;
+  width: 100px;
+  color: white;
+}
+.digits button {
+  background-color: #ccc;
 }
 
 /* All things Grid, Flexbox, Box Alignment */
