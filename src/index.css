@@ -15,6 +15,14 @@ button {
   cursor: pointer;
 }
 
+.operations button {
+  background-color: orange;
+  width: 100px;
+}
+.digits button {
+  background-color: #ccc;
+}
+
 /* All things Grid, Flexbox, Box Alignment */
 .wrapper,
 .subgrid {
