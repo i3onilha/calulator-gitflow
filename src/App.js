@@ -23,10 +23,16 @@ function App() {
       <div className="show-input">{input}</div>
       <div className="modifiers subgrid">
         <button
-          onClick={() => setInput("0")}
+          onClick={() => setInput("")}
           value=""
         >
           AC
+        </button>
+        <button
+          onClick={() => setInput("0")}
+          value=""
+        >
+          C
         </button>
         <button
           onClick={() => removeLastDigit()}
