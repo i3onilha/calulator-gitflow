@@ -21,7 +21,7 @@ button {
   width: 100px;
   color: white;
 }
-.digits button {
+.modifiers button {
   background-color: #ccc;
 }
 
@@ -33,6 +33,7 @@ button {
 .wrapper {
   grid-template-areas:
     "total total total total"
+    "modif modif modif oper"
     "digit digit digit oper"
     "digit digit digit oper"
     "digit digit digit oper"
@@ -42,6 +43,9 @@ button {
 .show-input {
   grid-area: total;
   min-height: 10vh;
+}
+.modifiers {
+  grid-area: modif;
 }
 .operations {
   grid-area: oper;
@@ -55,6 +59,11 @@ button {
   justify-content: flex-start;
   align-items: center;
   font-size: 2rem;
+}
+
+.modifiers {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
 }
 
 .digits {
